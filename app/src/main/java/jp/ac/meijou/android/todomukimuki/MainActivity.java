@@ -24,19 +24,13 @@ public class MainActivity extends AppCompatActivity {
 
         binding.switch1.setOnClickListener(v -> {
             imageChange(p);
-            pAdd(p);
-        });
-        binding.switch2.setOnClickListener(v -> {
-            imageChange(p);
-            pAdd(p);
+            binding.point.setText("2");
         });
 
 
+
     }
-    private void pAdd(int p){
-        p = p + 1;
-        return;
-    }
+
 
     private void imageChange(int p){
         //ポイントpが増えると絵が変わる
