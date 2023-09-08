@@ -19,12 +19,20 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        int p = 0;
+        int p = 3;
 
         binding.switch1.setOnClickListener(v -> {
-            binding.point.setText("1");
+            imageChange(p);
+            binding.point.setText("2");
+
+
         });
 
+
+
+    }
+
+    private void imageChange(int p){
         //ポイントpが増えると絵が変わる
         binding.imageView.setImageResource(imageRes);
         if(p < 2){
@@ -42,6 +50,5 @@ public class MainActivity extends AppCompatActivity {
         else{
             imageRes = R.drawable.mukimuki_level5;
         }
-
     }
 }
