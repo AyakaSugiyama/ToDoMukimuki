@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
     private int imageRes = R.drawable.mukimuki_level1;
 
+    int p = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
