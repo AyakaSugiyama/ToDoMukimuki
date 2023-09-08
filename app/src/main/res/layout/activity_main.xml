@@ -30,10 +30,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="10dp"
-        android:text="0/10"
+        android:textSize="48dp"
+        app:layout_constraintEnd_toStartOf= "@id/pointMax"
+        app:layout_constraintBottom_toBottomOf="@id/imageView" />
+
+    <TextView
+        android:id="@+id/pointMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="/10"
         android:textSize="24dp"
         app:layout_constraintEnd_toEndOf= "parent"
-        app:layout_constraintBottom_toBottomOf="@id/imageView" />
+        app:layout_constraintBottom_toBottomOf="@id/point" />
 
     <TextView
         android:id="@+id/textView"
@@ -59,7 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editText1" />
+        app:layout_constraintTop_toBottomOf="@id/editText1"/>
 
     <EditText
         android:id="@+id/editText3"
@@ -67,7 +76,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editText2" />
+        app:layout_constraintTop_toBottomOf="@id/editText2"/>
 
     <EditText
         android:id="@+id/editText4"
@@ -75,7 +84,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editText3" />
+        app:layout_constraintTop_toBottomOf="@id/editText3"/>
 
     <EditText
         android:id="@+id/editText5"
@@ -119,8 +128,8 @@
 
     <Switch
         android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/editText1"
         app:layout_constraintBottom_toBottomOf= "@id/editText1"
@@ -128,8 +137,8 @@
 
     <Switch
         android:id="@+id/switch2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/editText2"
         app:layout_constraintBottom_toBottomOf= "@id/editText2"
@@ -137,8 +146,8 @@
 
     <Switch
         android:id="@+id/switch3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/editText3"
         app:layout_constraintBottom_toBottomOf= "@id/editText3"
@@ -146,8 +155,8 @@
 
     <Switch
         android:id="@+id/switch4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/editText4"
         app:layout_constraintBottom_toBottomOf= "@id/editText4"
@@ -155,8 +164,8 @@
 
     <Switch
         android:id="@+id/switch5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/editText5"
         app:layout_constraintBottom_toBottomOf= "@id/editText5"
@@ -164,8 +173,8 @@
 
     <Switch
         android:id="@+id/switch6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/editText6"
         app:layout_constraintBottom_toBottomOf= "@id/editText6"
@@ -173,8 +182,8 @@
 
     <Switch
         android:id="@+id/switch7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/editText7"
         app:layout_constraintBottom_toBottomOf= "@id/editText7"
@@ -182,8 +191,8 @@
 
     <Switch
         android:id="@+id/switch8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/editText8"
         app:layout_constraintBottom_toBottomOf= "@id/editText8"
@@ -191,8 +200,8 @@
 
     <Switch
         android:id="@+id/switch9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/editText9"
         app:layout_constraintBottom_toBottomOf= "@id/editText9"
