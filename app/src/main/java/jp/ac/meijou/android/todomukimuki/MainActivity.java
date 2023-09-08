@@ -21,10 +21,26 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         int p = 0;
+        binding.point.setText(p);
 
         binding.switch1.setOnClickListener(v -> {
-            imageChange(p);
-            binding.point.setText("2");
+            imageChange(1);
+            binding.point.setText("1");
+        });
+
+        binding.switch2.setOnClickListener(v -> {
+            imageChange(4);
+            binding.point.setText("4");
+        });
+
+        binding.switch3.setOnClickListener(v -> {
+            imageChange(7);
+            binding.point.setText("7");
+        });
+
+        binding.switch4.setOnClickListener(v -> {
+            imageChange(10);
+            binding.point.setText("10");
         });
 
 
