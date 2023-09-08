@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        int p = 3;
+        int p = 5;
 
         binding.switch1.setOnClickListener(v -> {
             imageChange(p);
@@ -37,18 +37,23 @@ public class MainActivity extends AppCompatActivity {
 
         if(p < 2){
             imageRes = R.drawable.mukimuki_level1;
+            binding.level.setText("level1");
         }
         else if(p < 3){
             imageRes = R.drawable.mukimuki_level2;
+            binding.level.setText("level2");
         }
         else if(p <4){
             imageRes = R.drawable.mukimuki_level3;
+            binding.level.setText("level3");
         }
         else if(p <5){
             imageRes = R.drawable.mukimuki_level4;
+            binding.level.setText("level4");
         }
         else{
             imageRes = R.drawable.mukimuki_level5;
+            binding.level.setText("level5");
         }
         binding.imageView.setImageResource(imageRes);
     }
