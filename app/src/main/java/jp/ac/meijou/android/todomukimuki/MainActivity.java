@@ -19,42 +19,52 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        binding.point.setText(String.valueOf(p));
 
         binding.switch1.setOnClickListener(v -> {
             imageChange(p);
             p = p + 1;
+            binding.point.setText(String.valueOf(p));
         });
         binding.switch2.setOnClickListener(v -> {
             imageChange(p);
             p = p + 1;
+            binding.point.setText(String.valueOf(p));
         });
         binding.switch3.setOnClickListener(v -> {
             imageChange(p);
             p = p + 1;
+            binding.point.setText(String.valueOf(p));
         });
         binding.switch4.setOnClickListener(v -> {
             imageChange(p);
             p = p + 1;
+            binding.point.setText(String.valueOf(p));
         });
         binding.switch5.setOnClickListener(v -> {
             imageChange(p);
             p = p + 1;
+            binding.point.setText(String.valueOf(p));
         });
         binding.switch6.setOnClickListener(v -> {
             imageChange(p);
             p = p + 1;
+            binding.point.setText(String.valueOf(p));
         });
         binding.switch7.setOnClickListener(v -> {
             imageChange(p);
             p = p + 1;
+            binding.point.setText(String.valueOf(p));
         });
         binding.switch8.setOnClickListener(v -> {
             imageChange(p);
             p = p + 1;
+            binding.point.setText(String.valueOf(p));
         });
         binding.switch9.setOnClickListener(v -> {
             imageChange(p);
             p = p + 1;
+            binding.point.setText(String.valueOf(p));
         });
     }
 
@@ -64,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
         if(p < 2){
             imageRes = R.drawable.mukimuki_level1;
             binding.level.setText("level1");
+
         }
         else if(p < 4){
             imageRes = R.drawable.mukimuki_level2;
