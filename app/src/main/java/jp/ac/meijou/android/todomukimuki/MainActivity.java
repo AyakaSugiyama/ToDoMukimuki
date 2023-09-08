@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void imageChange(int p){
         //ポイントpが増えると絵が変わる
-        binding.imageView.setImageResource(imageRes);
+
         if(p < 2){
             imageRes = R.drawable.mukimuki_level1;
         }
@@ -50,5 +50,6 @@ public class MainActivity extends AppCompatActivity {
         else{
             imageRes = R.drawable.mukimuki_level5;
         }
+        binding.imageView.setImageResource(imageRes);
     }
 }
