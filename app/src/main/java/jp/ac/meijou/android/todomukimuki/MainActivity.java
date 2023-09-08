@@ -2,10 +2,7 @@ package jp.ac.meijou.android.todomukimuki;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 
 import jp.ac.meijou.android.todomukimuki.databinding.ActivityMainBinding;
 
@@ -14,56 +11,69 @@ public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
     private int imageRes = R.drawable.mukimuki_level1;
 
+    int p = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        int p = 0;
-        binding.point.setText(p);
 
         binding.switch1.setOnClickListener(v -> {
-            imageChange(1);
-            binding.point.setText("1");
+            imageChange(p);
+            p = p + 1;
         });
-
         binding.switch2.setOnClickListener(v -> {
-            imageChange(4);
-            binding.point.setText("4");
+            imageChange(p);
+            p = p + 1;
         });
-
         binding.switch3.setOnClickListener(v -> {
-            imageChange(7);
-            binding.point.setText("7");
+            imageChange(p);
+            p = p + 1;
         });
-
         binding.switch4.setOnClickListener(v -> {
-            imageChange(10);
-            binding.point.setText("10");
+            imageChange(p);
+            p = p + 1;
         });
-
-
-
+        binding.switch5.setOnClickListener(v -> {
+            imageChange(p);
+            p = p + 1;
+        });
+        binding.switch6.setOnClickListener(v -> {
+            imageChange(p);
+            p = p + 1;
+        });
+        binding.switch7.setOnClickListener(v -> {
+            imageChange(p);
+            p = p + 1;
+        });
+        binding.switch8.setOnClickListener(v -> {
+            imageChange(p);
+            p = p + 1;
+        });
+        binding.switch9.setOnClickListener(v -> {
+            imageChange(p);
+            p = p + 1;
+        });
     }
-
 
     private void imageChange(int p){
         //ポイントpが増えると絵が変わる
 
-        if(p < 3){
+        if(p < 2){
             imageRes = R.drawable.mukimuki_level1;
             binding.level.setText("level1");
         }
-        else if(p < 5){
+        else if(p < 4){
             imageRes = R.drawable.mukimuki_level2;
             binding.level.setText("level2");
         }
-        else if(p <7){
+        else if(p <6){
             imageRes = R.drawable.mukimuki_level3;
             binding.level.setText("level3");
         }
-        else if(p <9){
+        else if(p <8){
             imageRes = R.drawable.mukimuki_level4;
             binding.level.setText("level4");
         }
